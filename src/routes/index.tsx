@@ -6,7 +6,7 @@ import { LandingPage } from "../pages/LandingPage";
 const Routes = () => {
   return (
     <Router>
-      <Route element={<LandingPage />} path="/home" />
+      <Route element={<LandingPage />} path="/" />
     </Router>
   );
 };
