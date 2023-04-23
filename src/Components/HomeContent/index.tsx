@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 import { NameDisplay } from "../NameDisplay";
 import { DefaultButton } from "../Button/DefaultButton";
@@ -49,7 +48,7 @@ const HomeContent = () => {
         </div>
       </div>
       <div className="absolute top-[35%] left-[45%]">
-        <Image
+        <img
           width={200}
           height={200}
           src={CenterLandImage}
@@ -57,7 +56,7 @@ const HomeContent = () => {
         />
       </div>
       <div className="absolute top-[42%] left-[90%]">
-        <Image
+        <img
           width={200}
           height={200}
           src={SmallLandImage}
@@ -65,7 +64,7 @@ const HomeContent = () => {
         />
       </div>
       <div className="absolute top-[82%] left-[86%]">
-        <Image
+        <img
           className=""
           src={LandComputerImage}
           alt="tube pixel image"
@@ -74,34 +73,19 @@ const HomeContent = () => {
         />
       </div>
       <div className="absolute top-[77%] left-[6%]">
-        <Image src={TubeImage} alt="tube pixel image" />
+        <img src={TubeImage} alt="tube pixel image" />
       </div>
       <div className="absolute top-[73.6%] ">
-        <Image
-          width={350}
-          height={350}
-          src={LandImage}
-          alt="tube pixel image"
-        />
+        <img width={350} height={350} src={LandImage} alt="tube pixel image" />
       </div>
       <div className="absolute top-[20%] left-[70%]">
-        <Image
-          src={CloudImage}
-          alt="tube pixel image"
-          width={500}
-          height={500}
-        />
+        <img src={CloudImage} alt="tube pixel image" width={500} height={500} />
       </div>
       <div className="absolute top-[65%] left-[45%]">
-        <Image
-          src={CloudImage}
-          alt="tube pixel image"
-          width={500}
-          height={500}
-        />
+        <img src={CloudImage} alt="tube pixel image" width={500} height={500} />
       </div>
       <div className="absolute top-[50%] left-[55%]">
-        <Image
+        <img
           className="animate-moveIsland"
           src={LandComputerImage}
           alt="tube pixel image"
@@ -110,7 +94,7 @@ const HomeContent = () => {
         />
       </div>
       <div className="absolute top-[45%] left-[55%]">
-        <Image
+        <img
           src={ComputerImage}
           alt="tube pixel image"
           width={400}
@@ -118,7 +102,7 @@ const HomeContent = () => {
         />
       </div>
       <div className="absolute top-[45%] left-[72%]">
-        <Image
+        <img
           className="animate-scale"
           src={QuestionMarkLImage}
           alt="tube pixel image"
@@ -127,7 +111,7 @@ const HomeContent = () => {
         />
       </div>
       <div className="absolute top-[40%] left-[63%]">
-        <Image
+        <img
           className="animate-scale1"
           src={QuestionMarkCImage}
           alt="tube pixel image"
@@ -136,7 +120,7 @@ const HomeContent = () => {
         />
       </div>
       <div className="absolute top-[50%] left-[58%] ">
-        <Image
+        <img
           className="animate-scale2"
           src={QuestionMarkRImage}
           alt="tube pixel image"
