@@ -1,18 +1,57 @@
+"use client";
 import Image from "next/image";
 
+import IphoneDeviceMockup from "@/components/DeviceMockup/Iphone";
+import DesktopDeviceMockup from "@/components/DeviceMockup/Desktop";
+
 interface CardProps {
-  src?: any;
-  title?: string;
-  desc?: string;
+  title: string;
+  desc: string;
+  imageDesktop: any;
+  imageIphone: any;
+  inversed?: boolean;
 }
 
-const Card = ({ src, title, desc }: CardProps) => {
+const Card = ({
+  title,
+  desc,
+  imageDesktop,
+  imageIphone,
+  inversed = false,
+}: CardProps) => {
   return (
-    <div className="hover:bg-zinc-200 h-60 w-96 hover:scale-150 hover:z-30 ease-in duration-150 z-20 rounded-xl p-4 flex items-center group flex-col text-lg">
-      <Image src={src} alt="project image" className="rounded-md pb-2" />
-      <div className="font-poppins text-zinc-900 font-semibold">{title}</div>
-      <div className="font-poppins text-zinc-900 font-medium invisible group-hover:visible ease-in duration-150 text-sm flex-wrap text-ellipsis overflow-hidden">
-        {desc}
+    <div
+      className={`flex ${
+        inversed ? "flex-row-reverse" : "flex-row"
+      } gap-20 justify-around w-full py-10`}
+    >
+      <div className="px-8 w-1/2 flex flex-col items-center text-zinc-900 text-lg">
+        <div className=" font-semibold text-2xl pb-2">{title}</div>
+        <div className="text-center">{desc}</div>
+      </div>
+      <div className="w-full relative scale-100 ">
+        <div className=" flex flex-col">
+          <div className="scale-90">
+            <DesktopDeviceMockup>
+              <Image
+                src={imageDesktop}
+                alt="project image"
+                width={278}
+                height={156}
+              />
+            </DesktopDeviceMockup>
+          </div>
+          <div className="absolute w-10 scale-50 left-[-7%] top-[-10%]">
+            <IphoneDeviceMockup>
+              <Image
+                src={imageIphone}
+                alt="project image"
+                width={272}
+                height={572}
+              />
+            </IphoneDeviceMockup>
+          </div>
+        </div>
       </div>
     </div>
   );

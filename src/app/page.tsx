@@ -14,7 +14,7 @@ const Home = () => {
   const handleClick = () => {};
   return (
     <>
-      <main className="w-[38%] mx-auto">
+      <div className="w-[38%] mx-auto">
         <div className=" flex flex-col mt-52 z-10 w-full">
           <div className="text-zinc-900 font-poppins font-semibold text-2xl">
             Olá, sou Caio Stato
@@ -90,7 +90,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </main>
+      </div>
     </>
   );
 };
