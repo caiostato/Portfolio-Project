@@ -3,7 +3,7 @@ const About = () => {
     <>
       <div className="w-[38%] mx-auto">
         <div className="text-zinc-900 font-poppins font-medium text-2xl mt-52 leading-relaxed">
-          <div className="text-purple-650 text-4xl py-4 font-semibold tracking-tighter">
+          <div className="text-purple-650 text-4xl py-4 font-semibold font-poppins tracking-tighter">
             Sobre mim
           </div>
           <div className=" text-left">

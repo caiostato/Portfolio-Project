@@ -7,9 +7,9 @@ import Gaara from "@/assets/gaara.jpg";
 const Projects = () => {
   return (
     <>
-      <div className="w-[45%] mx-auto mt-40 ">
+      <div className="w-[60%] mx-auto mt-40 ">
         <div className="w-full flex items-center flex-col">
-          <div className="text-purple-650 text-5xl py-4 font-semibold font-poppins tracking-tighter">
+          <div className="text-purple-650 text-4xl py-4 font-semibold font-poppins tracking-tighter">
             Meus Projetos
           </div>
           <div className="flex flex-col gap-20">
