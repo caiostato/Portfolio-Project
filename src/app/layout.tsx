@@ -12,7 +12,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body>
-        <div className="h-full w-full bg-zinc-100 relative flex flex-col overflow-y-scroll scrollbar-thin scrollbar-track-gray-300">
+        <div className="h-full w-full bg-zinc-100 relative flex flex-col">
           <Header />
           <div className="fixed left-[15%] top-1/4">
             <HeroPattern />
